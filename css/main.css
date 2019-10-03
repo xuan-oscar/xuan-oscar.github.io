@@ -18,9 +18,9 @@
     float:left;
 }
  
-#content div{
+#content > div{
     padding-top: 100px;
-    height:400px;
+    min-height:400px;
     padding-left: 5px;
 }
  
@@ -68,7 +68,36 @@ body{
     color:black;
 /*    text-shadow: 0px 0px 1px black;*/
 }
- 
+
+#nav li:hover{
+    background-color: coral;
+    
+}
+#nav li:hover a{
+    color:white;
+}
+
+.img{
+    border: 1px solid gray;
+    float:left;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px ;
+    
+}
+
+.img img{
+    width: 200px;
+    border: 3px solid #ffffff;
+    filter: grayscale(100%);
+    border-radius: 10px ;   
+}
+.img:hover img{
+    border: 2px sold coral;
+    filter: grayscale(0%)
+}
+
  
 /*
 #content div div h1{
